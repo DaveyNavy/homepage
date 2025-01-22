@@ -16,3 +16,45 @@
 
 }
 
+p, h1, h2, img {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 2px 2px gray;
+
+}
+
+.name {
+    font-family: 'playfair_displayregular';
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+    bottom: 0;
+    padding: 0 1.5rem 1.5rem 0;
+    text-align: right;
+    font-weight: lighter;
+    line-height: 7rem;
+}
+
+@media (max-width: 500px) {
+    .name {
+        font-size: 4rem;
+        line-height: 5rem;    
+    }
+}
+
+@media (max-width: 400px) {
+    .name {
+        font-size: 3rem;
+        line-height: 4rem;    
+    }
+}
