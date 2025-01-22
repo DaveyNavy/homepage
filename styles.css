@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./Roboto/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./ROboto/roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('./Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
