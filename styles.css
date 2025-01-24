@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'robotoregular';
-    src: url('./Roboto/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
-         url('./ROboto/roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    src: url('./fonts/Roboto/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/ROboto/roboto-variablefont_wdthwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,32 +9,36 @@
 
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('./Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('./Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('./fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/Playfair_Display/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-p, h1, h2, img {
+p, h1, h2, img, body {
     padding: 0;
     margin: 0;
+} 
+
+h1 {
+    font-family: 'playfair_displayregular';
+    margin-bottom: 10px;
 }
 
 .header {
     position: relative;
     padding: 1rem;
+    background-color: white;
+    background-image: linear-gradient(-45deg, white 50%, #013A6B 50%);
 }
 
 img {
     width: 100%;
     object-fit: contain;
-    box-shadow: 2px 2px gray;
-
 }
 
 .name {
-    font-family: 'playfair_displayregular';
     color: white;
     font-size: 6rem;
     position: absolute;
@@ -44,6 +48,74 @@ img {
     font-weight: lighter;
     line-height: 7rem;
 }
+
+.about {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.about > p {
+    font-family: 'robotoregular';
+    color: rgb(99, 96, 96);
+}
+
+.icon-tray {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.icon {
+    max-width: 30px;
+}
+
+.icon-small {
+    max-width: 20px;
+}
+
+.my-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card > img {
+    border: 1px solid black;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: teal;
+    color: white;
+    margin-top: 3rem;
+}
+
+.contact > h1 {
+    align-self: center;
+}
+
 
 @media (max-width: 500px) {
     .name {
